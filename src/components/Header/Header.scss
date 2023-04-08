@@ -2,4 +2,67 @@
     max-width: 100%;
     width: 100%;
     background-color: #ff7300;
+    display: flex;
+    justify-content: center;
+
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+}
+
+.link{
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text{
+        text-decoration: none;
+        outline: none;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+        transform: scale(1);
+        transition: color .5s, transform .5s;
+
+        &:hover{
+            color: #333333;
+        }
+
+        &:hover + .link__line{
+            color: #333333;
+            width: 100%;
+            background: #333333;
+            animation-name: line-width;
+            animation-duration: 1s;
+
+            @keyframes line-width {
+                from{
+                    width: 0;
+                }
+                to{
+                    width: 100%;
+                }
+            }
+        }
+
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+
+    &__line{
+        width: 0;
+        height: 2px;
+        background: #ffffff;
+        transition: background .5s, transform .5s;
+
+    }
+}
+
+.wrapper{
+    max-width: 1700px;
+    width: 100%;
 }
