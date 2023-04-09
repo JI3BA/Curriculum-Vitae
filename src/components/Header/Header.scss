@@ -8,7 +8,7 @@
     &__links{
         display: flex;
         justify-content: space-between;
-        padding: 5px 0;
+        padding: 10px 0;
     }
 }
 
@@ -35,10 +35,10 @@
             color: #333333;
             width: 100%;
             background: #333333;
-            animation-name: line-width;
+            animation-name: line-open;
             animation-duration: 1s;
 
-            @keyframes line-width {
+            @keyframes line-open {
                 from{
                     width: 0;
                 }
@@ -58,6 +58,17 @@
         height: 2px;
         background: #ffffff;
         transition: background .5s, transform .5s;
+        animation-name: line-close;
+        animation-duration: 1s;
+
+            @keyframes line-close {
+                from{
+                    width: 100%;
+                }
+                to{
+                    width: 0;
+                }
+            }
 
     }
 }
