@@ -4,7 +4,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: url('../../../images/about-me.jpg');
+    background-image: url('../../../images/about-me.jpg');
+    background-size: cover;
 
     &:before {
         content: '';
