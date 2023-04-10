@@ -7,11 +7,11 @@ const Header: FC = () => {
             <div className='header__container wrapper'>
                 <div className="header__links">
                     <div className='link__container'>
-                        <a href="#main" className="link__text">Main</a>
+                        <a href="#about" className="link__text">About me</a>
                         <p className="link__line"></p>
                     </div>
                     <div className='link__container'>
-                        <a href="#about" className="link__text">About me</a>
+                        <a href="#education" className="link__text">Education</a>
                         <p className="link__line"></p>
                     </div>
                     <div className='link__container'>
