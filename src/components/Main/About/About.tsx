@@ -37,7 +37,7 @@ const About: FC = () => {
                 </div>
             </div>
 
-            {modal && <ModalAboutMe isModal={setModal}/>}
+            <ModalAboutMe modal={modal} isModal={setModal}/>
         </>
     )
 }
