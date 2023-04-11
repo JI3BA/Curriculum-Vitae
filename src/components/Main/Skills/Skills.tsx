@@ -9,27 +9,67 @@ const Skills: FC = () => {
 
                 <div className='skills__description'>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill_procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">HTML</p>
                     </div>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill_procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">CSS</p>
                     </div>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill_procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">JavaScript</p>
                     </div>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill_procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">TypeScript</p>
                     </div>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill_procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">React</p>
                     </div>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill_procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">Redux</p>
                     </div>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill_procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">Axios</p>
                     </div>
                     <div className="skills__skill">
+                        <div className='skill__outer'>
+                            <div className="skill__inner">
+                                <p className="skill__procent">80%</p>
+                            </div>
+                        </div>
                         <p className="skills__name">Webpack</p>
                     </div>
                 </div>
