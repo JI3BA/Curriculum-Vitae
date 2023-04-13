@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "HTML",
+        "procent": 80
+    },
+    {
+        "id": 2,
+        "name": "CSS",
+        "procent": 75
+    },
+    {
+        "id": 3,
+        "name": "JavaScript",
+        "procent": 85
+    },
+    {
+        "id": 4,
+        "name": "TypeScript",
+        "procent": 65
+    },
+    {
+        "id": 5,
+        "name": "React",
+        "procent": 78
+    },
+    {
+        "id": 6,
+        "name": "Redux",
+        "procent": 60
+    },
+    {
+        "id": 7,
+        "name": "Axios",
+        "procent": 62
+    },
+    {
+        "id": 8,
+        "name": "Webpack",
+        "procent": 40
+    }
+]
