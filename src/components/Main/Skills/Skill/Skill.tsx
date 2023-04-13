@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import './Skill.scss'
 
@@ -8,11 +8,24 @@ type SkillProps = {
 }
 
 const Skill: FC<SkillProps> = ({name, procent}) => {
+    const [calcProcent, setCalcProcent] = useState<number>(0)
+
+    useEffect(() => {
+        const calc = setInterval(() => {
+            if(calcProcent < procent){
+                setCalcProcent(prev => prev+1)
+            }
+        }, 20);
+        
+        return () => clearInterval(calc)
+        
+    }, [calcProcent, procent])
+
     return(
             <motion.div className="skills__skill" initial={{strokeDasharray: 472, strokeDashoffset: 472}} whileInView={{strokeDashoffset:  472 - (472 * (procent / 100))}} viewport={{once: true}} transition={{duration: 2}}>
                 <div className='skill__outer'>
                     <div className="skill__inner">
-                        <p className="skill_procent">{procent}%</p>
+                        <p className="skill_procent">{calcProcent}%</p>
                     </div>
                 </div>
                             

@@ -19,7 +19,7 @@ const Header: FC = () => {
                         <p className="link__line"></p>
                     </div>
                     <div className='link__container'>
-                        <a href="#location" className="link__text">Location</a>
+                        <a href="#projects" className="link__text">Projects</a>
                         <p className="link__line"></p>
                     </div>
                     <div className='link__container'>
