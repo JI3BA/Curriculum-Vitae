@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/Curriculum-Vitae/static/css/main.44860ab1.css",
-    "main.js": "/Curriculum-Vitae/static/js/main.a91d76da.js",
+    "main.css": "/Curriculum-Vitae/static/css/main.88097dfc.css",
+    "main.js": "/Curriculum-Vitae/static/js/main.315000b7.js",
+    "static/media/cv.png": "/Curriculum-Vitae/static/media/cv.a9958df827a0162fafb1.png",
+    "static/media/memory-game__game.png": "/Curriculum-Vitae/static/media/memory-game__game.d54b1ec026bd730a353c.png",
+    "static/media/fish.png": "/Curriculum-Vitae/static/media/fish.5c4a96a8d901079ad12a.png",
+    "static/media/weather.png": "/Curriculum-Vitae/static/media/weather.8825939258a8b50cdede.png",
     "static/media/library.jpg": "/Curriculum-Vitae/static/media/library.0b3399d51074ad91af9f.jpg",
     "static/media/me.jpg": "/Curriculum-Vitae/static/media/me.0c0445f79e5d42ca314e.jpg",
     "static/media/about-me.jpg": "/Curriculum-Vitae/static/media/about-me.6e4a2475958986b7324e.jpg",
     "static/media/belstu.jpg": "/Curriculum-Vitae/static/media/belstu.3d48f7cdad77119b8fe5.jpg",
+    "static/media/todo.png": "/Curriculum-Vitae/static/media/todo.8f9a3fa963b8dcd1e0d9.png",
     "index.html": "/Curriculum-Vitae/index.html",
-    "main.44860ab1.css.map": "/Curriculum-Vitae/static/css/main.44860ab1.css.map",
-    "main.a91d76da.js.map": "/Curriculum-Vitae/static/js/main.a91d76da.js.map"
+    "main.88097dfc.css.map": "/Curriculum-Vitae/static/css/main.88097dfc.css.map",
+    "main.315000b7.js.map": "/Curriculum-Vitae/static/js/main.315000b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.44860ab1.css",
-    "static/js/main.a91d76da.js"
+    "static/css/main.88097dfc.css",
+    "static/js/main.315000b7.js"
   ]
 }
