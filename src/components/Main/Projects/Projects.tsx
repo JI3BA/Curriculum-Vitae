@@ -1,15 +1,15 @@
 import { FC } from "react";
 import './Projects.scss';
-import projects from '../../../data/projects.json'
-import Project from "./Project/Project";
+import projects from "../../../data/skills"
+import Project from "./Project/Project"
 
 const Projects: FC = () => {
     return (
         <div className="projects">
-            <div className="projectrs__container wrapper">
+            <div className="projects__container wrapper">
                 {projects.map(item => {
                     return(
-                        <Project name={item.name} desc={item.description} img={item.photo} key={item.id} />
+                        <Project name={item.name} desc={item.description} stack={item.stack} img={item.picture} link={item.link} key={item.id} />
                     )
                 })}
             </div>
