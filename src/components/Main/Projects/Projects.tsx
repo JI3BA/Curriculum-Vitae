@@ -5,13 +5,17 @@ import Project from "./Project/Project"
 
 const Projects: FC = () => {
     return (
-        <div className="projects">
+        <div className="projects" id='projects'>
             <div className="projects__container wrapper">
-                {projects.map(item => {
-                    return(
-                        <Project name={item.name} desc={item.description} stack={item.stack} img={item.picture} link={item.link} key={item.id} />
-                    )
-                })}
+                <h2 className="component__title projects__title">Projects</h2>
+
+                <div className="projects__project">
+                    {projects.map(item => {
+                        return(
+                            <Project name={item.name} desc={item.description} stack={item.stack} img={item.picture} link={item.link} key={item.id} />
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )

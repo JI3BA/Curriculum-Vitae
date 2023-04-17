@@ -1,0 +1,10 @@
+.component{
+    &__title{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        font-size: 42px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+}

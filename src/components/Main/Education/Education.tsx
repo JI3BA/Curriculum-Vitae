@@ -6,7 +6,7 @@ const Education: FC = () => {
     const [showSpec, setShowSpec] = useState<boolean>(false)
 
     return(
-        <div className="education">
+        <div className="education" id='education'>
             <div className="education__container wrapper">
                 <h2 className="component__title">Education</h2>
 

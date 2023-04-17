@@ -5,7 +5,7 @@ import Skill from './Skill/Skill'
 
 const Skills: FC = () => {
     return(
-        <div className='skills'>
+        <div className='skills' id='skills'>
             <div className="skills__container wrapper">
                 <h2 className="component__title">Skills</h2>
 

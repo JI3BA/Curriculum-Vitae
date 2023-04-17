@@ -54,8 +54,10 @@ const Gallery: FC = () => {
     }
 
     return (
-        <div className="gallery">
+        <div className="gallery" id='gallery'>
             <div className="gallery__container wrapper">
+                <h2 className="component__title gallery__title">Meme</h2>
+
                 <div className="gallery__item">
                     <AnimatePresence initial={false} custom={direction}>
                         <motion.img

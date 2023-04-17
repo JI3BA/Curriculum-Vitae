@@ -18,8 +18,13 @@
 
     &__container{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         z-index: 2;
+    }
+
+    &__me{
+        display: flex;
+        justify-content: space-between;
     }
 
     &__description{
