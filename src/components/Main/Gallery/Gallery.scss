@@ -31,3 +31,19 @@
         height: 800px;
     }
 }
+
+@media screen and (max-width: 925px) {
+    .gallery{
+
+        &__item{
+            max-width: 650px;
+            height: 650px;
+        }
+
+        &__image{
+            position: absolute;
+            width: 650px;
+            height: 650px;
+        }
+    }
+}

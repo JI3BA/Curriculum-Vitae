@@ -54,3 +54,16 @@
         }
     }
 }
+
+@media screen and (max-width: 1230px) {
+    .skills{
+        &__skill{
+            &:nth-child(3){
+                transform: translateX(180px);
+            }
+            &:nth-child(6){
+                transform: translateX(0);
+            }
+        }
+    }
+}

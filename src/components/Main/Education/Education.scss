@@ -22,6 +22,7 @@
         text-align: center;
         flex-direction: column;
         z-index: 2;
+        padding: 0 10px;
     }
 
     &__content{
@@ -117,6 +118,7 @@
             width: 100%;
             font-size: 26px;
             text-align: start;
+            padding-top: 20px;
             transform: translateY(-300px);
             opacity: 0;
             visibility: hidden;
@@ -129,5 +131,39 @@
                 opacity: 1;
             }
         } 
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .education{
+
+        &__picture{
+            max-width: 400px;
+        }
+
+        &__description{
+            font-size: 24px;
+        }
+
+        &__speciality{
+            max-width: 500px;
+            width: 100%;
+
+            &--description{
+                max-width: 500px;
+                width: 100%;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .education{
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
