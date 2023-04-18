@@ -217,3 +217,113 @@
     }
 }
 
+@media screen and (max-width: 925px) {
+    .modal{
+        &__container{
+            max-width: 300px;
+        }
+
+        &__photo{
+            max-width: 300px;
+            height: 300px;
+        }
+
+        &__social-link{
+            &.left{
+                transform: translate(-250px, -50%);
+                animation: link-left 1s ease-in-out;   
+            }
+
+            @keyframes link-left {
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(-250px, -50%); opacity: 1}
+            }
+
+            &.down{
+                transform: translate(-50%, 170px);       
+                animation: link-down 1s ease-in-out;
+            }
+    
+            @keyframes link-down{
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(-50%, 170px); opacity: 1}
+            }
+    
+            &.right{
+                transform: translate(170px, -50%);
+                animation: link-right 1s ease-in-out;
+            }
+    
+            @keyframes link-right {
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(170px, -50%); opacity: 1}
+            }
+    
+            &.up{
+                transform: translate(-50%, -250px);
+                animation: link-up 1s ease-in-out;
+            }
+
+            @keyframes link-up {
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(-50%, -250px); opacity: 1}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .modal{
+        &__container{
+            max-width: 150px;
+        }
+
+        &__photo{
+            max-width: 150px;
+            height: 150px;
+        }
+
+        &__social-link{
+            &.left{
+                transform: translate(-170px, -50%);
+                animation: link-left 1s ease-in-out;   
+            }
+
+            @keyframes link-left {
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(-170px, -50%); opacity: 1}
+            }
+
+            &.down{
+                transform: translate(-50%, 90px);       
+                animation: link-down 1s ease-in-out;
+            }
+    
+            @keyframes link-down{
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(-50%, 90px); opacity: 1}
+            }
+    
+            &.right{
+                transform: translate(90px, -50%);
+                animation: link-right 1s ease-in-out;
+            }
+    
+            @keyframes link-right {
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(90px, -50%); opacity: 1}
+            }
+    
+            &.up{
+                transform: translate(-50%, -170px);
+                animation: link-up 1s ease-in-out;
+            }
+
+            @keyframes link-up {
+                from{transform: translate(-50%, -50%); opacity: 0}
+                to{transform: translate(-50%, -170px); opacity: 1}
+            }
+        }
+    }
+}
+

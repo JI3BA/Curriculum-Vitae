@@ -232,3 +232,34 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .about{
+        &__info{
+            max-width: 300px;
+        }
+
+        &__photo{
+            width: 300px;
+            height: 400px;
+        }
+    }
+
+    .contact{
+
+        &__text{
+            padding: 7px 3px;
+            font-size: 14px;
+        }
+
+        &__info{
+            padding: 7px 10px;
+            font-size: 16px;
+
+            &.active{
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+

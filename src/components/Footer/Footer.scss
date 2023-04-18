@@ -22,3 +22,13 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    .footer{
+        &__container{
+            font-size: 14px;
+            font-weight: 500;
+            padding: 15px 0;
+        }
+    }
+}

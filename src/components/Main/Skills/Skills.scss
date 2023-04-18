@@ -67,3 +67,71 @@
         }
     }
 }
+
+@media screen and (max-width: 730px) {
+    .skills{
+        &__skill{
+            &:nth-child(1){
+                transform: translateX(150px);
+            }
+            &:nth-child(2){
+                transform: translateX(-70px);
+            }
+            &:nth-child(3){
+                transform: translateX(0);
+            }
+            &:nth-child(3){
+                transform: translateX(50px);
+            }
+            &:nth-child(4){
+                transform: translateX(-150px);
+            }
+            &:nth-child(5){
+                transform: translateX(0);
+            }
+            &:nth-child(6){
+                transform: translateX(150px);
+            }
+            &:nth-child(7){
+                transform: translateX(-25px);
+            }
+            &:nth-child(8){
+                transform: translateX(70px);
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 450px) {
+    .skills{
+        &__skill{
+            &:nth-child(1){
+                transform: translateX(30px);
+            }
+            &:nth-child(2){
+                transform: translateX(-50px);
+            }
+            &:nth-child(3){
+                transform: translateX(0);
+            }
+            &:nth-child(3){
+                transform: translateX(60px);
+            }
+            &:nth-child(4){
+                transform: translateX(-50px);
+            }
+            &:nth-child(5){
+                transform: translateX(0);
+            }
+            &:nth-child(6){
+                transform: translateX(60px);
+            }
+            &:nth-child(7){
+                transform: translateX(-55px);
+            }
+            &:nth-child(8){
+                transform: translateX(70px);
+            }
+        }
+    } 
+}

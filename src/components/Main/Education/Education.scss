@@ -167,3 +167,21 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    .education{
+        &__picture{
+            max-width: 300px;
+            height: 400px;
+        }
+
+        &__description{
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &__name{
+            padding: 5px 0;
+        }
+    }
+}
