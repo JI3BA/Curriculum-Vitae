@@ -1,7 +1,7 @@
 .header{
     max-width: 100%;
     width: 100%;
-    background-color: #ff7300;
+    background: rgba(0,0,0,.97);
     display: flex;
     justify-content: center;
 
@@ -28,13 +28,13 @@
         transition: color .5s, transform .5s;
 
         &:hover{
-            color: #333333;
+            color: #919191;
         }
 
         &:hover + .link__line{
-            color: #333333;
+            color: #919191;
             width: 100%;
-            background: #333333;
+            background: #919191;
             animation-name: line-open;
             animation-duration: 1s;
 
