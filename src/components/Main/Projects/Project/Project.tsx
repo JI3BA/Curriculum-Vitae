@@ -1,4 +1,3 @@
-import { FC } from "react";
 import './Project.scss'
 
 type ProjectProps = {
@@ -9,7 +8,7 @@ type ProjectProps = {
     link: string
 }
 
-const Project: FC<ProjectProps> = ({name,desc, img, stack, link}) => {
+export const Project = ({name,desc, img, stack, link}: ProjectProps) => {
     return (
         <div className="project">
             <div className="project__container">
@@ -19,7 +18,7 @@ const Project: FC<ProjectProps> = ({name,desc, img, stack, link}) => {
                     <img src={img} className="project__image" alt={name} />
                 </div>
                 <p className="project__desc">Tech stack: <span className="project__stack">{stack}</span></p>
-                <a href={link} className="project__link" target="_blank">
+                <a href={link} rel="noreferrer" className="project__link" target="_blank">
                     <svg className="project__svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="60px" height="60px">
                         <path className="project__icon" d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44
                         C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615
@@ -40,5 +39,3 @@ const Project: FC<ProjectProps> = ({name,desc, img, stack, link}) => {
         </div>
     )
 }
-
-export default Project

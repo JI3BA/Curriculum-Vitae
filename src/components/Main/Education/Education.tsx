@@ -1,8 +1,8 @@
-import { FC, useState } from "react"
+import { useState } from "react"
 import './Education.scss'
 import university from '../../../images/belstu.jpg'
 
-const Education: FC = () => {
+export const Education = () => {
     const [showSpec, setShowSpec] = useState<boolean>(false)
 
     return(
@@ -39,5 +39,3 @@ const Education: FC = () => {
         </div>
     )
 }
-
-export default Education

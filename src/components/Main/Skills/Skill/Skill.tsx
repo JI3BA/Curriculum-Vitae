@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import './Skill.scss'
 
@@ -7,7 +7,7 @@ type SkillProps = {
     procent: number
 }
 
-const Skill: FC<SkillProps> = ({name, procent}) => {
+export const Skill = ({name, procent}: SkillProps) => {
     const [calcProcent, setCalcProcent] = useState<number>(0)
 
     useEffect(() => {
@@ -50,5 +50,3 @@ const Skill: FC<SkillProps> = ({name, procent}) => {
                 </motion.div>
     )
 }
-
-export default Skill

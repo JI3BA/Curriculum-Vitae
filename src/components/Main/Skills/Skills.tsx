@@ -1,9 +1,8 @@
-import { FC } from 'react'
 import './Skills.scss'
 import skills from '../../../data/skills.json'
-import Skill from './Skill/Skill'
+import { Skill } from './Skill/Skill'
 
-const Skills: FC = () => {
+export const Skills = () => {
     return(
         <div className='skills' id='skills'>
             <div className="skills__container wrapper">
@@ -20,5 +19,3 @@ const Skills: FC = () => {
         </div>
     )
 }
-
-export default Skills

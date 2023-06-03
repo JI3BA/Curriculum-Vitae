@@ -1,9 +1,8 @@
-import { FC } from "react";
 import './Projects.scss';
 import projects from "../../../data/skills"
-import Project from "./Project/Project"
+import { Project } from "./Project/Project"
 
-const Projects: FC = () => {
+export const Projects = () => {
     return (
         <div className="projects" id='projects'>
             <div className="projects__container wrapper">
@@ -20,5 +19,3 @@ const Projects: FC = () => {
         </div>
     )
 }
-
-export default Projects

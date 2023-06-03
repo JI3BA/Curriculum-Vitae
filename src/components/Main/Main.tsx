@@ -1,12 +1,11 @@
-import { FC } from 'react'
 import './Main.scss'
-import About from './About/About'
-import Education from './Education/Education'
-import Skills from './Skills/Skills'
-import Projects from './Projects/Projects'
-import Gallery from './Gallery/Gallery'
+import { About } from './About/About'
+import { Education } from './Education/Education'
+import { Skills } from './Skills/Skills'
+import { Projects } from './Projects/Projects'
+import { Gallery } from './Gallery/Gallery'
 
-const Main: FC = () => {
+export const Main = () => {
     return(
         <>
             <About />
@@ -17,5 +16,3 @@ const Main: FC = () => {
         </>
     )
 }
-
-export default Main

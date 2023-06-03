@@ -1,8 +1,8 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import './Gallery.scss'
 import memes from "../../../data/meme";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "../../Button/Button";
+import { Button } from "../../Button/Button";
 
 const variants = {
     initial: (direction: number) => {
@@ -31,7 +31,7 @@ const variants = {
     },
   }
 
-const Gallery: FC = () => {
+export const Gallery = () => {
     const [index, setIndex] = useState<number>(0)
     const [direction, setDirection] = useState<number>(0)
 
@@ -80,5 +80,3 @@ const Gallery: FC = () => {
         </div>
     )
 }
-
-export default Gallery

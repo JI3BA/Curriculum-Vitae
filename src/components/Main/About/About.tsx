@@ -1,9 +1,9 @@
-import { FC, useState } from 'react'
+import { useState } from 'react'
 import './About.scss'
 import me from '../../../images/me.jpg'
-import ModalAboutMe from '../../ModalAboutMe/ModalAboutMe'
+import { ModalAboutMe } from '../../ModalAboutMe/ModalAboutMe'
 
-const About: FC = () => {
+export const About = () => {
     const [showNumber, setShowNumber] = useState<boolean>(false)
     const [showEmail, setShowEmail] = useState<boolean>(false)
     const [showGit, setShowGit] = useState<boolean>(false)
@@ -16,7 +16,9 @@ const About: FC = () => {
                     <h2 className="component__title">About me</h2>
 
                     <div className='about__me'>
-                        <img src={me} alt="me" className='about__photo' onClick={() => setModal(true)}/>
+                        <div className='me'>
+                            <img src={me} alt="me" className='me__photo' onClick={() => setModal(true)}/>
+                        </div>
                      
                         <div className="about__description">
                             <p className="about__name">Artyom Lyovkin (24 y.o.)</p>
@@ -37,7 +39,7 @@ const About: FC = () => {
                                 <p className={showEmail ? "contact__info active" : "contact__info"}>artyomlyovkin@gmail.com</p>
                             </div>
 
-                            <div className="contact">
+                            <div className="contact git">
                                 <svg className="contact__icon" onClick={() => setShowGit(prev => !prev)} xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="120px" height="120px">
                                     <path className="contact__svg" d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,
                                     0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,
@@ -64,5 +66,3 @@ const About: FC = () => {
         </>
     )
 }
-
-export default About

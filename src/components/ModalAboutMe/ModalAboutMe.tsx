@@ -1,4 +1,4 @@
-import { FC, MouseEvent, useState, useRef } from "react";
+import { MouseEvent, useState, useRef } from "react";
 import './ModalAboutMe.scss'
 import me from '../../images/me.jpg'
 import { CSSTransition } from "react-transition-group";
@@ -8,7 +8,7 @@ type ModalProps = {
     isModal: (modal: boolean) => void
 }
 
-const ModalAboutMe: FC<ModalProps> = ({isModal, modal}) => {
+export const ModalAboutMe = ({isModal, modal}: ModalProps) => {
     const [showLinks, setShowLinks] = useState<boolean>(false)
     const nodeRef = useRef(null);
 
@@ -49,5 +49,3 @@ const ModalAboutMe: FC<ModalProps> = ({isModal, modal}) => {
         </CSSTransition>
     )
 }
-
-export default ModalAboutMe

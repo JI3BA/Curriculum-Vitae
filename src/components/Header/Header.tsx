@@ -1,7 +1,6 @@
-import { FC } from 'react'
 import './Header.scss'
 
-const Header: FC = () => {
+export const Header = () => {
     return(
         <div className='header'>
             <div className='header__container wrapper'>
@@ -31,5 +30,3 @@ const Header: FC = () => {
         </div>
     )
 }
-
-export default Header
