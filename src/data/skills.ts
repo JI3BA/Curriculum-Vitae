@@ -1,4 +1,4 @@
-import Skill from "../interfaces/Skill"
+import { Skill } from "../interfaces/Skill"
 import memoryGame from "../images/projects/memory-game/memory-game__game.png"
 import weather from "../images/projects/weather/weather.png"
 import todo from "../images/projects/todo/todo.png"
