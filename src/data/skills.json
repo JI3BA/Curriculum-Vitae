@@ -2,41 +2,41 @@
     {
         "id": 1,
         "name": "HTML",
-        "procent": 80
+        "percent": 80
     },
     {
         "id": 2,
         "name": "CSS",
-        "procent": 75
+        "percent": 75
     },
     {
         "id": 3,
         "name": "JavaScript",
-        "procent": 85
+        "percent": 85
     },
     {
         "id": 4,
         "name": "TypeScript",
-        "procent": 65
+        "percent": 65
     },
     {
         "id": 5,
         "name": "React",
-        "procent": 78
+        "percent": 78
     },
     {
         "id": 6,
         "name": "Redux",
-        "procent": 60
+        "percent": 60
     },
     {
         "id": 7,
         "name": "Axios",
-        "procent": 62
+        "percent": 62
     },
     {
         "id": 8,
         "name": "Webpack",
-        "procent": 40
+        "percent": 40
     }
 ]
