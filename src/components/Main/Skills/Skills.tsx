@@ -11,7 +11,7 @@ export const Skills = () => {
                 <div className='skills__description'>
                 {skills.map(item => {
                     return(
-                        <Skill name={item.name} procent={item.procent} key={item.id}/>
+                        <Skill name={item.name} percent={item.percent} key={item.id}/>
                     )
                 })}
                 </div>

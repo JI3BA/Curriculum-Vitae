@@ -4,28 +4,28 @@ import './Skill.scss'
 
 type SkillProps = {
     name: string,
-    procent: number
+    percent: number
 }
 
-export const Skill = ({name, procent}: SkillProps) => {
-    const [calcProcent, setCalcProcent] = useState<number>(0)
+export const Skill = ({name, percent}: SkillProps) => {
+    const [calcPercent, setCalcPercent] = useState<number>(0)
 
     useEffect(() => {
         const calc = setInterval(() => {
-            if(calcProcent < procent){
-                setCalcProcent(prev => prev+1)
+            if(calcPercent < percent){
+                setCalcPercent(prev => prev+1)
             }
         }, 20);
         
         return () => clearInterval(calc)
         
-    }, [calcProcent, procent])
+    }, [calcPercent, percent])
 
     return(
-            <motion.div className="skills__skill" initial={{strokeDasharray: 472, strokeDashoffset: 472}} whileInView={{strokeDashoffset:  472 - (472 * (procent / 100))}} viewport={{once: true}} transition={{duration: 2}}>
+            <motion.div className="skills__skill" initial={{strokeDasharray: 472, strokeDashoffset: 472}} whileInView={{strokeDashoffset:  472 - (472 * (percent / 100))}} viewport={{once: true}} transition={{duration: 2}}>
                 <div className='skill__outer'>
                     <div className="skill__inner">
-                        <p className="skill_procent">{calcProcent}%</p>
+                        <p className="skill_procent">{calcPercent}%</p>
                     </div>
                 </div>
                             
