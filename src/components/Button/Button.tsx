@@ -1,9 +1,10 @@
+import { ReactNode, MouseEventHandler, CSSProperties} from "react";
 import './Button.scss'
 
 interface IButton{
-    children: React.ReactNode,
-    onClick?: React.MouseEventHandler<HTMLButtonElement>,
-    style?: React.CSSProperties,
+    children: ReactNode,
+    onClick?: MouseEventHandler<HTMLButtonElement>,
+    style?: CSSProperties,
     className: string,
 }
 
