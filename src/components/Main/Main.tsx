@@ -1,18 +1,20 @@
 import './Main.scss'
-import { About } from './About/About'
-import { Education } from './Education/Education'
-import { Skills } from './Skills/Skills'
-import { Projects } from './Projects/Projects'
-import { Gallery } from './Gallery/Gallery'
+import { About } from '../../pages/About/About'
+import { Education } from '../../pages/Education/Education'
+import { Skills } from '../../pages/Skills/Skills'
+import { Projects } from '../../pages/Projects/Projects'
+import { Gallery } from '../../pages/Gallery/Gallery'
+import {Routes, Route} from "react-router-dom";
 
 export const Main = () => {
     return(
-        <>
-            <About />
-            <Education />
-            <Skills />
-            <Projects />
-            <Gallery />
-        </>
+        <Routes>
+            <Route path='*' element={<About />} />
+            <Route path='/' element={<About />} />
+            <Route path='/education' element={<Education />} />
+            <Route path='/skills' element={<Skills />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/gallery' element={<Gallery />} />
+        </Routes>
     )
 }
