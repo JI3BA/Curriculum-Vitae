@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Curriculum-Vitae/static/css/main.9cdf430e.css",
-    "main.js": "/Curriculum-Vitae/static/js/main.da4decb4.js",
+    "main.css": "/Curriculum-Vitae/static/css/main.1dd52a47.css",
+    "main.js": "/Curriculum-Vitae/static/js/main.ea26acf3.js",
     "static/media/memory-game__game.png": "/Curriculum-Vitae/static/media/memory-game__game.d54b1ec026bd730a353c.png",
     "static/media/me.jpg": "/Curriculum-Vitae/static/media/me.b7683ce09b0a5c99fe6b.jpg",
     "static/media/cv.png": "/Curriculum-Vitae/static/media/cv.4f03f190daf7d399951f.png",
@@ -18,11 +18,11 @@
     "static/media/belstu.jpg": "/Curriculum-Vitae/static/media/belstu.3d48f7cdad77119b8fe5.jpg",
     "static/media/todo.png": "/Curriculum-Vitae/static/media/todo.8f9a3fa963b8dcd1e0d9.png",
     "index.html": "/Curriculum-Vitae/index.html",
-    "main.9cdf430e.css.map": "/Curriculum-Vitae/static/css/main.9cdf430e.css.map",
-    "main.da4decb4.js.map": "/Curriculum-Vitae/static/js/main.da4decb4.js.map"
+    "main.1dd52a47.css.map": "/Curriculum-Vitae/static/css/main.1dd52a47.css.map",
+    "main.ea26acf3.js.map": "/Curriculum-Vitae/static/js/main.ea26acf3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cdf430e.css",
-    "static/js/main.da4decb4.js"
+    "static/css/main.1dd52a47.css",
+    "static/js/main.ea26acf3.js"
   ]
 }
