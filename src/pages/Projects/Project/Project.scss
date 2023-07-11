@@ -1,0 +1,84 @@
+.project{
+    margin: 10px 0;
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid #8a8a8a;
+    box-shadow: 10px 10px 8px #8a8a8a;
+    position: relative;
+
+    &__container{
+        padding: 10px;
+    }
+
+    &__title{
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__desc{
+        max-width: 90%;
+        width: 100%;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+
+    &:hover .project__image{
+        transform: scale(1.2);
+    }
+    
+    &__window{
+        max-width: 800px;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin: 10px 0;
+    }
+
+    &__image{
+        max-width: 100%;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: transform .5s;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &__stack{
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    &__link{
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+
+        &:hover .project__svg{
+            transform: translateX(5px);
+        }
+
+        &:hover .project__icon{
+            fill: #460088;
+        }
+    }
+
+    &__svg{
+        transform: translateX(0);
+        transition: transform .5s;
+    }
+
+    &__icon{
+        fill: #000000;
+        transition: fill .5s;
+    }
+
+}
+
+@media screen and (max-width: 925px) {
+    .project{
+        max-width: 650px;
+    }
+}
