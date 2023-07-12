@@ -200,6 +200,23 @@
     padding-top: 20px;
 }
 
+.click-about{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    &__arrow{
+        width: 20px;
+        height: 20px;
+        fill: #ffffff;
+        transform: rotate(100deg);
+    }
+
+    &__text{
+        color: #ffffff;
+    }
+}
+
 @media screen and (max-width: 1230px) {
     .about{
         &__description{
@@ -252,6 +269,12 @@
             font-size: 24px;
         }
     }
+
+    .click-about {
+        position: relative;
+        top: -5px;
+        left: 220px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -282,6 +305,10 @@
                 font-weight: 500;
             }
         }
+    }
+
+    .click-about {
+        left: 50px;
     }
 }
 

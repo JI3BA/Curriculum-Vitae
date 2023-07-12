@@ -15,6 +15,24 @@ export const About = () => {
                 <div className="about__container wrapper">
                     <h2 className="component__title">About me</h2>
 
+                    <div className='click-about click-about--active'>
+                        <p className="click__text click-about__text">click here</p>
+                        <svg className="click-about__arrow" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlnsXlink="http://www.w3.org/1999/xlink"
+                             width="50px" height="50px" viewBox="0 0 452.922 452.922"
+                             xmlSpace="preserve">
+                            <g>
+                                <path d="M430.134,135.315c4.896-34.884,18.36-110.16-25.092-127.908c-48.349-18.972-121.788,3.06-169.524,15.3
+                                    c-27.539,6.732-123.623,27.54-116.891,71.604c0.612,2.448,1.836,4.284,4.284,6.12c9.18,24.48,41.616,44.064,59.976,60.588
+                                    c3.672,3.06,6.732,6.12,10.404,9.18C136.375,232.011,54.979,280.971,18.259,358.083c-2.448,4.896-1.224,9.18,1.224,11.628
+                                    c0,0.612-0.612,1.225-0.612,1.836c-3.06,14.076,21.42,29.988,30.6,37.944c15.912,14.688,32.436,29.988,51.408,41.616
+                                    c4.896,3.06,9.18,1.836,12.24-0.612c2.448,0,5.508-1.224,7.344-3.672c56.916-64.872,105.876-134.028,167.687-194.616
+                                    c20.196,18.36,39.78,37.944,57.528,59.364c1.836,2.448,4.896,3.672,7.344,4.284c1.225,8.567,16.524,13.464,23.256,3.672
+                                    C409.938,268.12,421.566,194.68,430.134,135.315z"/>
+                            </g>
+                        </svg>
+                    </div>
+
                     <div className='about__me'>
                         <div className='me'>
                             <img src={me} alt="me" className='me__photo' onClick={() => setModal(true)}/>
