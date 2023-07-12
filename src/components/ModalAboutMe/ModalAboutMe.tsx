@@ -1,6 +1,6 @@
 import { MouseEvent, useState, useRef } from "react";
 import './ModalAboutMe.scss'
-import me from '../../images/me.jpg'
+import me from '../../images/modal-me.jpg'
 import { CSSTransition } from "react-transition-group";
 
 type ModalProps = {
