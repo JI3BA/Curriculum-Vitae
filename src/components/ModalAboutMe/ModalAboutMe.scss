@@ -60,7 +60,7 @@
         border-radius: 50%;
         border: 2px solid #ffffff;
         z-index: 8;
-        cursor: pointer
+        cursor: pointer;
     }
 
     &__links{
@@ -217,6 +217,28 @@
     }
 }
 
+.click{
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    transition: opacity 1s;
+
+    &--active{
+        opacity: 1;
+    }
+
+    &__text{
+        position: relative;
+        right: 25px;
+    }
+
+    &__arrow{
+        fill: #ffffff;
+        transform: rotate(90deg);
+    }
+}
+
 @media screen and (max-width: 925px) {
     .modal{
         &__container{
@@ -269,6 +291,10 @@
                 to{transform: translate(-50%, -250px); opacity: 1}
             }
         }
+    }
+
+    .click {
+        left: -60px;
     }
 }
 
@@ -323,6 +349,21 @@
                 from{transform: translate(-50%, -50%); opacity: 0}
                 to{transform: translate(-50%, -170px); opacity: 1}
             }
+        }
+    }
+
+    .click {
+        top: 10px;
+        left: -20px;
+
+        &__text{
+            right: 20px;
+            font-size: 10px;
+        }
+
+        &__arrow{
+            width: 20px;
+            height: 20px;
         }
     }
 }
