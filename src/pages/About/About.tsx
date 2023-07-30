@@ -13,7 +13,9 @@ export const About = () => {
         <>
             <div className='about' id='about'>
                 <div className="about__container wrapper">
-                    <h2 className="component__title">About me</h2>
+                    <h2 className="component__title">
+                        About me
+                    </h2>
 
                     <div className='click-about click-about--active'>
                         <p className="click__text click-about__text">click here</p>
@@ -39,7 +41,31 @@ export const About = () => {
                         </div>
                      
                         <div className="about__description">
-                            <p className="about__name">Artyom Lyovkin (24 y.o.)</p>
+                            <p className="about__name">
+                                <span>A</span>
+                                <span>r</span>
+                                <span>t</span>
+                                <span>y</span>
+                                <span>o</span>
+                                <span>m</span>
+                                <span>  </span>
+                                <span>L</span>
+                                <span>y</span>
+                                <span>o</span>
+                                <span>v</span>
+                                <span>k</span>
+                                <span>i</span>
+                                <span>n</span>
+                                <span> </span>
+                                <span>(</span>
+                                <span>2</span>
+                                <span>4</span>
+                                <span>y</span>
+                                <span>.</span>
+                                <span>o</span>
+                                <span>.</span>
+                                <span>)</span>
+                            </p>
                             <p className="about__position">Front-End developer</p>
                             <p className="about__info">Developer looking for a job as a Front-End Developer. I'm skilled
                                 in JavaScript, HTML, CSS (SCSS), TypeScript, React, React Hooks, Redux, Axios,
