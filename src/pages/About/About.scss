@@ -34,7 +34,7 @@
         font-size: 40px;
         color: #ffffff;
         transition: all 0.5s ease-in-out;
-        animation: animate 5s infinite;
+        animation: animate 5s ease-in-out;
     }
     &__name span:nth-child(1){
         animation-delay:0.2s
@@ -107,17 +107,16 @@
     }
     @keyframes animate {
         0%{
-            transform:translatey(0);
+            transform: translateY(0);
             margin-left:0;
         }
         50%{
-            transform:translatey(-15px);
-            color: #3b0098;
+            transform: translateY(-15px);
             margin-left:10px;
-            text-shadow: 0 15px 5px rgba(0,0,0,1)
+            text-shadow: 0 10px 5px rgb(168, 168, 168)
         }
         100%{
-            transform:translatey(0);
+            transform: translateY(0);
             margin-left:0;
         }
     }

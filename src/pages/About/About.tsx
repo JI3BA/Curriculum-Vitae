@@ -48,7 +48,7 @@ export const About = () => {
                                 <span>y</span>
                                 <span>o</span>
                                 <span>m</span>
-                                <span>  </span>
+                                <span> </span>
                                 <span>L</span>
                                 <span>y</span>
                                 <span>o</span>
