@@ -1,7 +1,7 @@
-import { useState } from "react";
+import {useState} from "react";
 import './Gallery.scss'
 import memes from "../../data/meme";
-import { motion, AnimatePresence } from "framer-motion";
+import {motion, AnimatePresence, wrap} from "framer-motion";
 import { Button } from "../../components/Button/Button";
 
 const variants = {
@@ -31,27 +31,18 @@ const variants = {
     },
   }
 
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset: number, velocity: number) => {
+    return Math.abs(offset) * velocity;
+};
+
 export const Gallery = () => {
-    const [index, setIndex] = useState<number>(0)
-    const [direction, setDirection] = useState<number>(0)
+    const [[page, direction], setPage] = useState([0, 0]);
+    const imageIndex = wrap(0, memes.length, page);
 
-    function nextStep() {
-        setDirection(1)
-        if (index === memes.length - 1) {
-        setIndex(0)
-        return
-        }
-        setIndex(index + 1)
-    }
-
-    function prevStep() {
-        setDirection(-1)
-        if (index === 0) {
-        setIndex(memes.length - 1)
-        return
-        }
-        setIndex(index - 1)
-    }
+    const paginate = (newDirection: number) => {
+        setPage([page + newDirection, newDirection]);
+    };
 
     return (
         <div className="gallery" id='gallery'>
@@ -65,16 +56,28 @@ export const Gallery = () => {
                             animate='animate'
                             initial='initial'
                             exit='exit'
-                            src={memes[index]}
+                            src={memes[imageIndex]}
                             alt='slides'
                             className='gallery__image'
-                            key={memes[index]}
+                            key={memes[imageIndex]}
                             custom={direction}
+                            drag="x"
+                            dragConstraints={{ left: 0, right: 0 }}
+                            dragElastic={1}
+                            onDragEnd={(e, { offset, velocity }) => {
+                                const swipe = swipePower(offset.x, velocity.x);
+
+                                if (swipe < -swipeConfidenceThreshold) {
+                                    paginate(1);
+                                } else if (swipe > swipeConfidenceThreshold) {
+                                    paginate(-1);
+                                }
+                            }}
                         />
                     </AnimatePresence>
 
-                    <Button className="button button__next" onClick={nextStep}>➜</Button>
-                    <Button className="button button__prev" onClick={prevStep}>➜</Button>
+                    <Button className="button button__next" onClick={() => paginate(1)}>➜</Button>
+                    <Button className="button button__prev" onClick={() => paginate(-1)}>➜</Button>
                 </div>
             </div>
         </div>
