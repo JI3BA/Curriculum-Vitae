@@ -25,7 +25,7 @@ export const Skill = ({name, percent}: SkillProps) => {
             <motion.div className="skills__skill" initial={{strokeDasharray: 472, strokeDashoffset: 472}} whileInView={{strokeDashoffset:  472 - (472 * (percent / 100))}} viewport={{once: true}} transition={{duration: 2}}>
                 <div className='skill__outer'>
                     <div className="skill__inner">
-                        <p className="skill_procent">{calcPercent}%</p>
+                        <p className="skill_percent">{calcPercent}%</p>
                     </div>
                 </div>
                             
