@@ -159,16 +159,19 @@
     height: 600px;
     border-radius: 20px;
     transform: scale(1) translateX(0);
-    transition: transform .5s;
     opacity: 1;
     animation-name: show-photo;
     animation-duration: 2s;
     cursor: pointer;
     overflow: hidden;
     margin: 0 0 20px 0;
+    border: 5px solid transparent;
+    background: linear-gradient(45deg, #035e85, #960957) border-box;
+    transition: transform .5s, background .5s;
 
     &:hover{
         transform: scale(.95);
+        background: linear-gradient(45deg, #5507be, #0a9eab) border-box;
     }
 
     &__photo{
