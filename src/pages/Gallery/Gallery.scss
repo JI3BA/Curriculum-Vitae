@@ -28,9 +28,10 @@
 
     &__image{
         position: absolute;
-        width: 800px;
-        height: 800px;
+        width: 100%;
+        height: 100%;
         cursor: grab;
+        object-fit: fill;
     }
 }
 
