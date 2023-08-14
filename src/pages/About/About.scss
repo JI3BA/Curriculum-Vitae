@@ -242,59 +242,12 @@
             opacity: 1;
         }
     }
-
-    &__icon{
-        cursor: pointer;
-        z-index: 10;
-
-        &:hover .contact__svg{
-            fill: #2904a8;
-        }
-
-        &:active .contact__svg{
-            transform: translateX(2px);
-        }
-    }
-
-    &__svg{
-        fill: #ffffff;
-        transform: translateX(0);
-        transition: .5s;
-    }
-
-    &__link{
-        display: flex;
-        align-items: center;
-        padding-left: 15px;
-        opacity: 0;
-        transform: translateX(-30px);
-        color: #ffffff;
-        text-decoration: none;
-        transition: .5s;
-        visibility: hidden;
-        z-index: 8;
-        user-select: none;
-
-        &:hover{
-           color: #04c1ce;
-        }
-
-        &.active{
-            visibility: visible;
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-}
-
-.git{
-    padding-top: 20px;
 }
 
 .click-about{
     position: absolute;
     top: 20px;
-    left: 180px;
+    left: 120px;
 
     &__arrow{
         width: 20px;
@@ -305,6 +258,61 @@
 
     &__text{
         color: #ffffff;
+    }
+}
+
+.follow{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    &__text{
+        line-height: 24px;
+        letter-spacing: 1.5px;
+    }
+
+    &__line{
+        border: 1px solid #ffffff;
+        width: 20px;
+        margin: 0 10px;
+    }
+
+    &-links{
+        &__link{
+            margin: 0 5px;
+        }
+
+        &__svg{
+            transition: fill .2s;
+        }
+
+        &__icon{
+            transform: translateY(0);
+            transition: transform .5s;
+
+            &:hover{
+                transform: translateY(-5px);
+
+                .follow{
+                    &-links{
+                        &__svg--git{
+                            fill: #3b0098;
+                        }
+                        &__svg--instagram{
+                            fill: #b93800;
+                        }
+                        &__svg--vk{
+                            fill: #0b43a2;
+                        }
+                        &__svg--linkedIn{
+                            fill: #0092c7;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
