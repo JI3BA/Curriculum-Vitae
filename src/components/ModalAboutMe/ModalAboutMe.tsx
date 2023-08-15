@@ -1,6 +1,10 @@
 import { MouseEvent, useState, useRef } from "react";
 import './ModalAboutMe.scss'
 import me from '../../images/modal-me.jpg'
+import me1 from '../../images/me/me1.jpg'
+import me2 from '../../images/me/me2.jpg'
+import me3 from '../../images/me/me3.jpg'
+import me4 from '../../images/me/me4.jpg'
 import { CSSTransition } from "react-transition-group";
 
 type ModalProps = {
@@ -34,6 +38,13 @@ export const ModalAboutMe = ({isModal, modal}: ModalProps) => {
                                     C409.938,268.12,421.566,194.68,430.134,135.315z"/>
                             </g>
                         </svg>
+                    </div>
+
+                    <div className="photos">
+                        <img src={me1} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--one': 'modal__photo photos__photo'}/>
+                        <img src={me2} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--two': 'modal__photo photos__photo'}/>
+                        <img src={me3} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--three': 'modal__photo photos__photo'}/>
+                        <img src={me4} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--four': 'modal__photo photos__photo'}/>
                     </div>
 
                     <div className="modal__me">
