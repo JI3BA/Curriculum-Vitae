@@ -218,6 +218,76 @@
     }
 }
 
+.photos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &__photo{
+        position: absolute;
+        cursor: grabbing;
+        transform: scale(1);
+        opacity: 0;
+        transition: .5s;
+
+        &--one{
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            left: -580px;
+            background: linear-gradient(45deg, #054083, #069f72) border-box;
+            opacity: 1;
+
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+
+        &--two{
+            width: 400px;
+            height: 400px;
+            top: -150px;
+            right: -550px;
+            background: linear-gradient(45deg, #d23a03, #1dd50a) border-box;
+            opacity: 1;
+
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+
+        &--three{
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            left: -300px;
+            background: linear-gradient(45deg, #c7030b, #0a5bab) border-box;
+            opacity: 1;
+
+            &:hover{
+                transform: scale(2.5);
+            }
+        }
+
+        &--four{
+            width: 350px;
+            height: 350px;
+            bottom: -150px;
+            right: -390px;
+            background: linear-gradient(45deg, #e3c305, #038ad0) border-box;
+            opacity: 1;
+
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+
+    }
+
+}
+
 .click{
     opacity: 0;
     position: absolute;
