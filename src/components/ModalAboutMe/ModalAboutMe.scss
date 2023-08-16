@@ -219,73 +219,116 @@
 }
 
 .photos{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 
     &__photo{
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
         position: absolute;
-        cursor: grabbing;
-        transform: scale(1);
-        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: 3px solid transparent;
         transition: .5s;
-
-        &--one{
-            width: 300px;
-            height: 300px;
-            top: -150px;
-            left: -580px;
-            background: linear-gradient(45deg, #054083, #069f72) border-box;
-            opacity: 1;
-
-            &:hover{
-                transform: scale(1.5);
-            }
-        }
-
-        &--two{
-            width: 400px;
-            height: 400px;
-            top: -150px;
-            right: -550px;
-            background: linear-gradient(45deg, #d23a03, #1dd50a) border-box;
-            opacity: 1;
-
-            &:hover{
-                transform: scale(1.5);
-            }
-        }
-
-        &--three{
-            width: 200px;
-            height: 200px;
-            bottom: -50px;
-            left: -300px;
-            background: linear-gradient(45deg, #c7030b, #0a5bab) border-box;
-            opacity: 1;
-
-            &:hover{
-                transform: scale(2.5);
-            }
-        }
-
-        &--four{
-            width: 350px;
-            height: 350px;
-            bottom: -150px;
-            right: -390px;
-            background: linear-gradient(45deg, #e3c305, #038ad0) border-box;
-            opacity: 1;
-
-            &:hover{
-                transform: scale(1.5);
-            }
-        }
-
     }
 
+    &__first{
+        width: 300px;
+        height: 300px;
+        transform: translate(-700px, -325px) scale(1);
+        opacity: 1;
+        background: linear-gradient(45deg, #054083, #069f72) border-box;
+        animation: photo-one .5s ease-in-out;
+        cursor: grab;
+
+        &:hover{
+            transform: translate(-700px, -325px) scale(1.5);
+        }
+    }
+
+    @keyframes photo-one {
+        from{
+            transform: translate(-50%,-50%);
+            opacity: 0;
+        }
+        to{
+            transform: translate(-700px, -325px);
+            opacity: 1;
+        }
+    }
+
+    &__second{
+        transform: translate(400px, -450px) scale(1);
+        opacity: 1;
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(45deg, #d23a03, #1dd50a) border-box;
+        animation: photo-two .5s ease-in-out;
+
+        &:hover{
+            transform: translate(400px, -450px) scale(1.2);
+        }
+    }
+
+    @keyframes photo-two {
+        from{
+            transform: translate(-50%,-50%);
+            opacity: 0;
+        }
+        to{
+            transform: translate(400px, -450px);
+            opacity: 1;
+        }
+    }
+
+    &__third{
+        transform: translate(-630px, 150px) scale(1);
+        opacity: 1;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(45deg, #c7030b, #0a5bab) border-box;
+        animation: photo-three .5s ease-in-out;
+
+        &:hover{
+            transform:  translate(-630px, 150px) scale(2.5);
+        }
+    }
+
+    @keyframes photo-three {
+        from{
+            transform: translate(-50%,-50%);
+            opacity: 0;
+        }
+        to{
+            transform: translate(-630px, 150px);
+            opacity: 1;
+        }
+    }
+
+    &__fourth{
+        transform: translate(350px, 75px) scale(1);
+        opacity: 1;
+        width: 350px;
+        height: 350px;
+        background: linear-gradient(45deg, #e3c305, #038ad0) border-box;
+        animation: photo-four .5s ease-in-out;
+
+        &:hover{
+            transform: translate(350px, 75px) scale(1.3);
+        }
+    }
+
+    @keyframes photo-four {
+        from{
+            transform: translate(-50%,-50%);
+            opacity: 0;
+        }
+        to{
+            transform: translate(350px, 75px);
+            opacity: 1;
+        }
+    }
 }
 
 .click{
