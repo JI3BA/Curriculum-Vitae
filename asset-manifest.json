@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Curriculum-Vitae/static/css/main.572d3444.css",
-    "main.js": "/Curriculum-Vitae/static/js/main.5f91e2b0.js",
+    "main.css": "/Curriculum-Vitae/static/css/main.499ad8d7.css",
+    "main.js": "/Curriculum-Vitae/static/js/main.c4c901af.js",
     "static/media/me1.jpg": "/Curriculum-Vitae/static/media/me1.1e48b6a4f547eb574f23.jpg",
     "static/media/me2.jpg": "/Curriculum-Vitae/static/media/me2.d96f08217479a1b8a44a.jpg",
     "static/media/me3.jpg": "/Curriculum-Vitae/static/media/me3.0bda70695617b37e22f4.jpg",
@@ -23,11 +23,11 @@
     "static/media/belstu.jpg": "/Curriculum-Vitae/static/media/belstu.3d48f7cdad77119b8fe5.jpg",
     "static/media/todo.png": "/Curriculum-Vitae/static/media/todo.8f9a3fa963b8dcd1e0d9.png",
     "index.html": "/Curriculum-Vitae/index.html",
-    "main.572d3444.css.map": "/Curriculum-Vitae/static/css/main.572d3444.css.map",
-    "main.5f91e2b0.js.map": "/Curriculum-Vitae/static/js/main.5f91e2b0.js.map"
+    "main.499ad8d7.css.map": "/Curriculum-Vitae/static/css/main.499ad8d7.css.map",
+    "main.c4c901af.js.map": "/Curriculum-Vitae/static/js/main.c4c901af.js.map"
   },
   "entrypoints": [
-    "static/css/main.572d3444.css",
-    "static/js/main.5f91e2b0.js"
+    "static/css/main.499ad8d7.css",
+    "static/js/main.c4c901af.js"
   ]
 }
