@@ -41,10 +41,10 @@ export const ModalAboutMe = ({isModal, modal}: ModalProps) => {
                     </div>
 
                     <div className="photos">
-                        <img src={me1} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--one': 'modal__photo photos__photo'}/>
-                        <img src={me2} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--two': 'modal__photo photos__photo'}/>
-                        <img src={me3} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--three': 'modal__photo photos__photo'}/>
-                        <img src={me4} alt="me" className={showLinks ? 'modal__photo photos__photo photos__photo--four': 'modal__photo photos__photo'}/>
+                        <img src={me1} alt="me" className={showLinks ? 'photos__photo photos__first': 'photos__photo'}/>
+                        <img src={me2} alt="me" className={showLinks ? 'photos__photo photos__second': 'photos__photo'}/>
+                        <img src={me3} alt="me" className={showLinks ? 'photos__photo photos__third': 'photos__photo'}/>
+                        <img src={me4} alt="me" className={showLinks ? 'photos__photo photos__fourth': 'photos__photo'}/>
                     </div>
 
                     <div className="modal__me">
