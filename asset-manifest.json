@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Curriculum-Vitae/static/css/main.499ad8d7.css",
-    "main.js": "/Curriculum-Vitae/static/js/main.409ff803.js",
+    "main.js": "/Curriculum-Vitae/static/js/main.d0ecfc9c.js",
     "static/media/memory-game__game.png": "/Curriculum-Vitae/static/media/memory-game__game.d54b1ec026bd730a353c.png",
     "static/media/me.jpg": "/Curriculum-Vitae/static/media/me.b7683ce09b0a5c99fe6b.jpg",
     "static/media/me2.jpg": "/Curriculum-Vitae/static/media/me2.15ba798dd4d3a4ea4c3d.jpg",
     "static/media/cv.png": "/Curriculum-Vitae/static/media/cv.4f03f190daf7d399951f.png",
-    "static/media/me1.jpg": "/Curriculum-Vitae/static/media/me1.75c254988e9a6d194be0.jpg",
+    "static/media/me1.jpg": "/Curriculum-Vitae/static/media/me1.613f2e8846811d1576b7.jpg",
     "static/media/fish.png": "/Curriculum-Vitae/static/media/fish.5c4a96a8d901079ad12a.png",
     "static/media/weather.png": "/Curriculum-Vitae/static/media/weather.8825939258a8b50cdede.png",
     "static/media/me4.jpg": "/Curriculum-Vitae/static/media/me4.43999468ae86985dbe6b.jpg",
@@ -24,10 +24,10 @@
     "static/media/todo.png": "/Curriculum-Vitae/static/media/todo.8f9a3fa963b8dcd1e0d9.png",
     "index.html": "/Curriculum-Vitae/index.html",
     "main.499ad8d7.css.map": "/Curriculum-Vitae/static/css/main.499ad8d7.css.map",
-    "main.409ff803.js.map": "/Curriculum-Vitae/static/js/main.409ff803.js.map"
+    "main.d0ecfc9c.js.map": "/Curriculum-Vitae/static/js/main.d0ecfc9c.js.map"
   },
   "entrypoints": [
     "static/css/main.499ad8d7.css",
-    "static/js/main.409ff803.js"
+    "static/js/main.d0ecfc9c.js"
   ]
 }
