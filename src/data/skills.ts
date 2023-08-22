@@ -25,10 +25,10 @@ const skills: Skill[] = [
     {
         id: 3,
         name: "ToDo list with hashtags",
-        description: "ToDo application for writing your thoughts.",
-        stack: "HTML, CSS, TypeScript, React, React Hooks",
+        description: "Todo application for working with notes",
+        stack: "HTML, CSS(SCSS), TypeScript, React, React Hooks, Redux, Redux Persist, Material UI.",
         picture: `${todo}`,
-        link: 'https://github.com/JI3BA/test-todo-app',
+        link: 'https://ji3ba.github.io/test-todo/',
     },
     {
         id: 4,
