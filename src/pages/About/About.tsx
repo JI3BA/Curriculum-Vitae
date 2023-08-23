@@ -66,7 +66,7 @@ export const About = () => {
                                 <span>)</span>
                             </p>
                             <p className="about__position">Front-End developer</p>
-                            <p className="about__info">Developer looking for a job as a Front-End Developer. I'm skilled
+                            <p className="about__info">Developer looking for a job as a <span className="about__info--title">Front-End</span> Developer. I'm skilled
                                 in JavaScript, HTML, CSS (SCSS), TypeScript, React, React Hooks, Redux, Axios,
                                 Git. Currently, I am focused on mastering my skills and my priority goal is to
                                 begin my Front-End Developer career.
