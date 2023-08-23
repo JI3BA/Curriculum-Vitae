@@ -130,6 +130,12 @@
     &__info{
         font-style: italic;
         padding-bottom: 20px;
+
+        &--title{
+            font-size: 32px;
+            font-weight: 700;
+            color: #e73600;
+        }
     }
 
     @keyframes show-desc {
@@ -168,6 +174,7 @@
     border: 5px solid transparent;
     background: linear-gradient(45deg, #035e85, #960957) border-box;
     transition: transform .5s, background .5s;
+    pointer-events: none;
 
     &:hover{
         transform: scale(.95);
