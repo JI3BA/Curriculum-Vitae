@@ -62,6 +62,7 @@
         z-index: 8;
         cursor: pointer;
         background: linear-gradient(45deg, #9219b6, #055b0e) border-box;
+        pointer-events: none;
     }
 
     &__links{
@@ -231,6 +232,8 @@
         transform: translate(-50%,-50%);
         border: 3px solid transparent;
         transition: .5s;
+        cursor: grab;
+        pointer-events: none;
     }
 
     &__first{
@@ -240,7 +243,6 @@
         opacity: 1;
         background: linear-gradient(45deg, #054083, #069f72) border-box;
         animation: photo-one .5s ease-in-out;
-        cursor: grab;
 
         &:hover{
             transform: translate(-700px, -325px) scale(1.5);
