@@ -174,7 +174,6 @@
     border: 5px solid transparent;
     background: linear-gradient(45deg, #035e85, #960957) border-box;
     transition: transform .5s, background .5s;
-    pointer-events: none;
 
     &:hover{
         transform: scale(.95);
@@ -249,12 +248,36 @@
             opacity: 1;
         }
     }
+
+    &__link{
+        color: #ffffff;
+        text-decoration: none;
+        transition: color .2s;
+
+        &:hover{
+            color: #e73600;
+        }
+    }
 }
 
 .click-about{
     position: absolute;
     top: 20px;
     left: 120px;
+    opacity: 1;
+    animation-name: show-click;
+    animation-duration: 2s;
+
+    @keyframes show-click {
+        from{
+            left: -300px;
+            opacity: 0;
+        }
+        to{
+            left: 120px;
+            opacity: 1;
+        }
+    }
 
     &__arrow{
         width: 20px;
