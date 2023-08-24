@@ -74,12 +74,14 @@ export const About = () => {
 
                             <div className="contact">
                                 <div className="contact__text" onClick={() => setShowNumber(prev => !prev)}>Phone: <p className='contact__cross'>➫</p></div>
-                                <p className={showNumber ? "contact__info active" : "contact__info"}>+375 (29) 574-42-36 (MTC, Telegram)</p>
+                                <p className={showNumber ? "contact__info active" : "contact__info"}>
+                                    <a className='contact__link' target='_blank' rel="noreferrer"  href='https://t.me/ji3ba'>+375 (29) 574-42-36 (MTC, Telegram)</a>
+                                </p>
                             </div>
 
                             <div className="contact">
                                 <div className="contact__text" onClick={() => setShowEmail(prev => !prev)}>Email: <p className='contact__cross'>➫</p></div>
-                                <p className={showEmail ? "contact__info active" : "contact__info"}>artyomlyovkin@gmail.com</p>
+                                <p className={showEmail ? "contact__info active" : "contact__info"}><a className='contact__link' target='_blank' rel="noreferrer"  href='mailto:artyomlyovkin@gmail.com'>artyomlyovkin@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
