@@ -110,6 +110,10 @@
         transform: translateY(0);
         transition: transform .5s;
 
+        &--arrow{
+            transform: rotate(180deg);
+        }
+
         &:hover{
             transform: translateY(10px);
         }
