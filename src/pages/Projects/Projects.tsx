@@ -7,7 +7,6 @@ export const Projects = () => {
         <div className="projects" id='projects'>
             <div className="projects__container wrapper">
                 <h2 className="component__title projects__title">Projects</h2>
-
                 <div className="projects__project">
                     {projects.map(item => {
                         return(
