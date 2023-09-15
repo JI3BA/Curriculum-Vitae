@@ -58,14 +58,14 @@ export const About = () => {
                                 <span> </span>
                                 <span>(</span>
                                 <span>2</span>
-                                <span>4</span>
+                                <span>5</span>
                                 <span>y</span>
                                 <span>.</span>
                                 <span>o</span>
                                 <span>.</span>
                                 <span>)</span>
                             </p>
-                            <p className="about__position">Front-End developer</p>
+                            <p className="about__position">Front-End Developer</p>
                             <p className="about__info">Developer looking for a job as a <span className="about__info--title">Front-End</span> Developer. I'm skilled
                                 in JavaScript, HTML, CSS (SCSS), TypeScript, React, React Hooks, Redux, Axios,
                                 Git. Currently, I am focused on mastering my skills and my priority goal is to
