@@ -24,6 +24,12 @@
         display: flex;
         box-shadow: 10px 10px 10px #000000,
                     12px 0 5px #be4209;
+        transition: box-shadow .5s;
+
+        &:hover{
+            box-shadow: 15px 15px 7px #000000,
+            15px 0 10px #be4209;
+        }
     }
 
     &__image{
