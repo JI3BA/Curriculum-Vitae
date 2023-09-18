@@ -32,10 +32,10 @@ export const Education = () => {
                         </p>
 
                         <p className={showSpec ? "education__speciality--description active" : "education__speciality--description"}>
-                            An automation engineer handles the efficient operation of a business system by using technology.
+                            An <span className="about__info--title">automation</span> engineer handles the efficient operation of a business system by using technology.
                             The role of the engineer is to analyze, design, implement, and adjust methods of streamlining parts of a business that computer,
                             robotics, and electronic technologies can automate.
-                            Being able to envision opportunities to automate and improve the operation of a business makes the automation engineer an invaluable resource in most business sectors.
+                            Being able to envision opportunities to automate and improve the operation of a business makes the automation <span className="about__info--title">engineer</span> an invaluable resource in most business sectors.
                         </p>  
                     </div>
                 </div>
